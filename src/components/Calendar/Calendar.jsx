@@ -7,9 +7,10 @@ import { useState } from 'react';
 const Calendar = ({ setMonthAmount, setYearAmount }) => {
   const [month, setMonth] = useState(false);
   const [year, setYear] = useState(false);
-  const [openCalendar, setOpenCalendar] = useState(true);
   const [monthText, setMonthText] = useState(false)
   const [yearText, setYearText] = useState(false)
+  const [openCalendar, setOpenCalendar] = useState(true);
+ 
 
   const toggleMonth = () => {
     setMonth(!month);
@@ -46,9 +47,11 @@ const Calendar = ({ setMonthAmount, setYearAmount }) => {
     if (classTable === 'rdtMonth') {
       setOpenCalendar(false);
       setMonthText(textContent)
+      setMonth(false)
     } else if (classTable === 'rdtYear') {
       setOpenCalendar(false);
       setYearText(textContent)
+      setYear(false)
     } else {
       setOpenCalendar(false);
     }
