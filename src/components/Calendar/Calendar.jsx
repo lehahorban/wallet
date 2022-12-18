@@ -29,7 +29,7 @@ const Calendar = ({ setMonthAmount, setYearAmount }) => {
   ];
   
   const thisMonth = monthList[currentMonth]
-  console.log(currentMonth);
+  
   
 
   const toggleMonth = () => {
