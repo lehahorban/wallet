@@ -46,6 +46,7 @@ export const Currency = () => {
       </thead>
       <tbody>
         {currencies.map(currency => {
+          
           const currencyData = serchCurrency(currency);
           if (currencyData) {
             return (
@@ -68,6 +69,7 @@ export const Currency = () => {
               </tr>
             );
           }
+          return null;
         })}
       </tbody>
     </table>
