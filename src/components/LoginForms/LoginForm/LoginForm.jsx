@@ -6,7 +6,7 @@ import css from './Login.module.css';
 
 import Logo from '../../Logo/Logo';
 
-import FormBtn from '../FromBtn/FormBtn';
+// import FormBtn from '../FromBtn/FormBtn';
 import FormBtnLink from '../FromBtn/FormBtnLink';
 
 import EmailInput from '../LoginInput/EmailInput/Input';
@@ -14,7 +14,7 @@ import PasswordInput from '../LoginInput/PasswordInput/PasswordInput.jsx';
 
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import useForm from 'hooks/useForm';
+// import useForm from 'hooks/useForm';
 
 const validationSchema = Yup.object().shape({
   email: Yup.string()
@@ -31,14 +31,14 @@ const LoginForm = ({ onSubmit }) => {
     email: '',
     password: '',
   };
-  const { state, setState } = useForm({ initialState, onSubmit });
+  // const { state, setState } = useForm({ initialState, onSubmit });
 
   const formik = useFormik({
     initialValues: initialState,
     validationSchema: validationSchema,
 
     onSubmit: values => {
-      setState(values);
+      // setState(values);
 
       onSubmit(values);
     },

@@ -10,6 +10,7 @@ import TransSelectors from 'redux/transactions/transactionSelector';
 export const StatisticContainer = () => {
   const [month, setMonth] = useState('');
   const [year, setYear] = useState('');
+  const dispatch = useDispatch();
   useEffect(() => {
     if (month !== '' && year !== '') {
       const params = {
@@ -31,9 +32,9 @@ export const StatisticContainer = () => {
     //   };
     //   dispatch(operations.statistic(params));
     // }
-  }, [month, year]);
+  }, [dispatch, month, year]);
 
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   useEffect(() => {
     dispatch(operations.statistic());
   }, [dispatch]);
