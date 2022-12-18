@@ -10,14 +10,34 @@ const Calendar = ({ setMonthAmount, setYearAmount }) => {
   const [monthText, setMonthText] = useState(false)
   const [yearText, setYearText] = useState(false)
   const [openCalendar, setOpenCalendar] = useState(true);
- 
+  const currentMonth = String(new Date().getMonth());
+  const currentYear = String(new Date().getFullYear());  
+
+  const monthList = [
+  'Jan',
+  'Feb',
+  'Mar',
+  'Apr',
+  'May',
+  'Jun',
+  'Jul',
+  'Aug',
+  'Sep',
+  'Oct',
+  'Nov',
+  'Dec'
+  ];
+  
+  const thisMonth = monthList[currentMonth]
+  console.log(thisMonth);
+  
 
   const toggleMonth = () => {
     setMonth(!month);
     setYear(false);
   };
 
-  const toggleYear = (e) => {
+  const toggleYear = () => {
     setYear(!year);
     setMonth(false);
    
@@ -61,7 +81,7 @@ const Calendar = ({ setMonthAmount, setYearAmount }) => {
     <div onClick={toggleCalendar} className={style.wrappCalendar}>
       <div>
         <div onClick={toggleMonth} className={style.wrapperMonth}>
-          <p className={style.calendarText}>{monthText ? monthText : "Month"}</p>
+          <p className={style.calendarText}>{monthText ? monthText : thisMonth}</p>
           <img src={arrow} alt=">" />
         </div>
         {month && (
@@ -83,7 +103,7 @@ const Calendar = ({ setMonthAmount, setYearAmount }) => {
           onClick={toggleYear}
           className={`${style.wrapperMonth} ${style.wrapperYear}`}
         >
-          <p className={style.calendarText}>{yearText ? yearText : "Year"}</p>
+          <p className={style.calendarText}>{yearText ? yearText : currentYear}</p>
           <img src={arrow} alt=">" />
         </div>
         {year && (
