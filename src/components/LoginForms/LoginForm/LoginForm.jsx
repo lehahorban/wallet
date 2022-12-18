@@ -6,7 +6,7 @@ import css from './Login.module.css';
 
 import Logo from '../../Logo/Logo';
 
-// import FormBtn from '../FromBtn/FormBtn';
+import FormBtn from '../FromBtn/FormBtn';
 import FormBtnLink from '../FromBtn/FormBtnLink';
 
 import EmailInput from '../LoginInput/EmailInput/Input';

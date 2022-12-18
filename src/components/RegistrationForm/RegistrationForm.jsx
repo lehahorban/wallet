@@ -2,7 +2,7 @@ import { useFormik } from 'formik';
 // import { useEffect } from "react";
 import RegistrationSchema from 'schemas/registration';
 import { initialState } from './initialState';
-import useForm from 'hooks/useForm';
+// import useForm from 'hooks/useForm';
 import { NavLink } from 'react-router-dom';
 
 import styles from './registration-form.module.css';
@@ -13,14 +13,14 @@ import { ReactComponent as AccountIcon } from '../../images/account-icon.svg';
 // import { style } from '@mui/system';
 
 const RegistrationForm = ({ onSubmit }) => {
-  const { state, setState } = useForm({ initialState, onSubmit });
+  // const { state, setState } = useForm({ initialState, onSubmit });
 
   const formik = useFormik({
     initialValues: initialState,
     validationSchema: RegistrationSchema,
 
     onSubmit: values => {
-      setState(values);
+      // setState(values);
 
       onSubmit(values);
     },

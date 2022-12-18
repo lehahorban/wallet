@@ -1,5 +1,5 @@
-import { useSelector } from 'react-redux';
-import AuthSelectors from 'redux/auth/authSelectors';
+// import { useSelector } from 'react-redux';
+// import AuthSelectors from 'redux/auth/authSelectors';
 
 import EllipsisText from 'react-ellipsis-text';
 
