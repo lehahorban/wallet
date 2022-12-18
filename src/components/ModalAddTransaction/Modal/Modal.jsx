@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import Media from 'react-media';
 import styled from 'styled-components';
 
-import { closeModalWindow } from 'transactionsRedux/transactionsGlobalSlice';
+// import { closeModalWindow } from 'transactionsRedux/transactionsGlobalSlice';
 import { toggleAddModal } from 'redux/transactions/transactionSlice';
 import Icon from '../Icon/Icon';
 

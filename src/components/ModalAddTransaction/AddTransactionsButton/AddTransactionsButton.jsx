@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
 import styled from 'styled-components';
 
-import { openModalAddTransaction } from 'transactionsRedux/transactionsGlobalSlice';
+// import { openModalAddTransaction } from 'transactionsRedux/transactionsGlobalSlice';
 import sprite from '../../../transactionsComponentIcons/sprite.svg';
 import { toggleAddModal } from 'redux/transactions/transactionSlice';
 

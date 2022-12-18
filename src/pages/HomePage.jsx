@@ -1,9 +1,9 @@
 import styled from 'styled-components';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import TransSelectors from 'redux/transactions/transactionSelector';
-import operations from 'redux/transactions/transactionsOperations';
+// import operations from 'redux/transactions/transactionsOperations';
 import HomeTab from 'components/HomeTab/HomeTab';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 
 const HomePage = () => {
   const data = useSelector(TransSelectors.getFilteredTransactions);

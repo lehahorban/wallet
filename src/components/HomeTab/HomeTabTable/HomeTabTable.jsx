@@ -14,7 +14,7 @@ import {
 } from './HomeTabTable.styled';
 
 const HomeTabTable = ({ data }) => {
-  let bal = useSelector(AuthSelectors.getUserBalance);
+  // let bal = useSelector(AuthSelectors.getUserBalance);
 
   return (
     <Container>

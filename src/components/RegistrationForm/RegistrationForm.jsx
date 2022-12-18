@@ -10,7 +10,7 @@ import { ReactComponent as WalletIcon } from '../../images/wallet-icon.svg';
 import { ReactComponent as EmailIcon } from '../../images/envelop-icon.svg';
 import { ReactComponent as LockIcon } from '../../images/lock-icon.svg';
 import { ReactComponent as AccountIcon } from '../../images/account-icon.svg';
-import { style } from '@mui/system';
+// import { style } from '@mui/system';
 
 const RegistrationForm = ({ onSubmit }) => {
   const { state, setState } = useForm({ initialState, onSubmit });

@@ -12,7 +12,7 @@ import Spinner from 'components/Spinner/Spinner';
 const HomeTab = ({ data }) => {
   const isLoading = useSelector(TransSelectors.getIsLoading);
 
-  const regExNoDots = /[^\d]/g;
+  // const regExNoDots = /[^\d]/g;
 
   // const dataToSotr = [...data];
   // // if (data.length === 0) {

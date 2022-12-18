@@ -5,14 +5,14 @@ import { Notify } from 'notiflix/build/notiflix-notify-aio';
 axios.defaults.baseURL =
   'https://final-comand-project-back-end-production.up.railway.app/api';
 
-const token = {
-  set(token) {
-    axios.defaults.headers.common.Authorization = `Bearer ${token}`;
-  },
-  unset() {
-    axios.defaults.headers.common.Authorization = '';
-  },
-};
+// const token = {
+//   set(token) {
+//     axios.defaults.headers.common.Authorization = `Bearer ${token}`;
+//   },
+//   unset() {
+//     axios.defaults.headers.common.Authorization = '';
+//   },
+// };
 
 const categories = createAsyncThunk(
   '/transactions/categories',

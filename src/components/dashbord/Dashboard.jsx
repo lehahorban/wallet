@@ -2,7 +2,7 @@ import Media from 'react-media';
 import { Outlet } from 'react-router';
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { Balance } from 'components/Balance/Balance';
+// import { Balance } from 'components/Balance/Balance';
 import { Currency } from 'components/currency/Currency';
 import AddTransactionsButton from 'components/ModalAddTransaction/AddTransactionsButton/AddTransactionsButton';
 import ModalAddTransaction from 'components/ModalAddTransaction';
@@ -12,11 +12,11 @@ import operations from 'redux/transactions/transactionsOperations';
 
 import {
   Container,
-  Nav,
-  NavItem,
+  // Nav,
+  // NavItem,
   DashboardContainer,
 } from './Dashboard.styled';
-import { getIsAddTransactionModalOpen } from '../../redux/transactions/transactionSelector';
+// import { getIsAddTransactionModalOpen } from '../../redux/transactions/transactionSelector';
 import NavigationAndBalance from './NavigationAndBalance';
 import TransSelectors from '../../redux/transactions/transactionSelector';
 

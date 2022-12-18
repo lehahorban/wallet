@@ -24,7 +24,7 @@ export const App = () => {
 
   useEffect(() => {
     dispatch(transOperations.categories());
-  }, []);
+  }, [dispatch]);
 
   return isRefreshing ? (
     <Spinner />

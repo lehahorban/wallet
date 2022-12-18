@@ -1,16 +1,16 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import Datetime from 'react-datetime';
-import { toast } from 'react-toastify';
+// import { toast } from 'react-toastify';
 import styled from 'styled-components';
 import 'react-datetime/css/react-datetime.css';
 
-import { useAddTransactionsMutation } from 'transactionsRedux/transactionsOperations';
-import {
-  addTransactionSuccess,
-  closeModalWindow,
-} from 'transactionsRedux/transactionsGlobalSlice';
-import NotifyContainer from './NotifyContainer/NotifyContainer';
+// import { useAddTransactionsMutation } from 'transactionsRedux/transactionsOperations';
+// import {
+//   addTransactionSuccess,
+//   closeModalWindow,
+// } from 'transactionsRedux/transactionsGlobalSlice';
+// import NotifyContainer from './NotifyContainer/NotifyContainer';
 import Button from './Button/Button';
 import CategoriesDropbox from './CategoriesDropbox/CategoriesDropbox';
 import TransactionSwitcher from './TransactionSwitcher/TransactionSwitcher';
