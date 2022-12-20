@@ -53,6 +53,7 @@ const authSlice = createSlice({
     [authOperation.currentUser.rejected](state, action) {
       state.error = true;
       state.isRefreshing = false;
+      state.token = '';
     },
   },
 });

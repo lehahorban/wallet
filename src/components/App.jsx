@@ -26,6 +26,8 @@ export const App = () => {
     dispatch(transOperations.categories());
   }, [dispatch]);
 
+  
+
   return isRefreshing ? (
     <Spinner />
   ) : (

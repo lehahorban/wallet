@@ -36,7 +36,8 @@ const login = createAsyncThunk('auth/login', async credentials => {
 const logout = createAsyncThunk('auth/logout', async () => {
   try {
     const { data } = await axios.get('/auth/logout');
-    token.set(data.token);
+    // token.set(data.token);
+    token.unset()
     return data;
   } catch ({ response }) {
     Notify.failure(`${response.status}: ${response.data.message}`);
@@ -53,7 +54,8 @@ const currentUser = createAsyncThunk('auth/refresh', async (_, thunkAPI) => {
     const { data } = await axios.get('/auth/current');
     return data;
   } catch ({ response }) {
-    Notify.failure(`${response.status}: ${response.data.message}`);
+    // Notify.failure(`${response.status}: ${response.data.message}`);
+    return thunkAPI.rejectWithValue();
   }
 });
 
